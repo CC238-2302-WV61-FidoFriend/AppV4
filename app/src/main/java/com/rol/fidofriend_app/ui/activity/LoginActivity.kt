@@ -22,27 +22,6 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        /*viewModel.loginStatus = { success ->
-            if (success) {
-                Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, MainActivity::class.java))
-                finish() // Finaliza la actividad actual
-            } else {
-                Toast.makeText(this, "No se pudo iniciar sesión...", Toast.LENGTH_SHORT).show()
-            }
-        }
-
-        viewModel.userId = { id ->
-            if (id != null) {
-                Log.d("LoginActivity", "ID del usuario: $id")
-                val intent = Intent(this, MainActivity::class.java)
-                intent.putExtra("USER_ID", id)
-                startActivity(intent)
-                finish() // Finaliza la actividad actual
-            } else {
-                // Manejar error
-            }
-        }*/
         viewModel.loginStatus = { user ->
             if (user != null) {
                 Log.d("LoginActivity", "ID del usuario: ${user.id}")

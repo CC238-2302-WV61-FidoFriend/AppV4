@@ -21,69 +21,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
 
-    /*override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        navigationView = binding.navView
-        visibilityOptions()
-
-        binding.btnSalirMain.setOnClickListener {
-            exitApp()
-        }
-
-        drawerLayout = binding.drawerLayout
-
-        navigationView =binding.navView
-        navigationView.setNavigationItemSelectedListener { menuItem ->
-            selectOptionMenu(menuItem.itemId)
-            true
-        }
-
-        setSupportActionBar(binding.toolbar)
-
-        supportActionBar?.apply {
-            setHomeAsUpIndicator(R.drawable.menu_24)
-            setDisplayHomeAsUpEnabled(true)
-            title = null
-        }
-
-        val toggle = ActionBarDrawerToggle(
-            this,
-            drawerLayout,
-            binding.toolbar,
-            R.string.open_menu,
-            R.string.close_menu
-        )
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
-
-
-        if (savedInstanceState == null || supportFragmentManager.findFragmentById(R.id.fragment_container) == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, F_Profile())
-                .commit()
-            navigationView.setCheckedItem(R.id.option_profile)
-        }
-
-        // Cargar la data del usuario mediante el ID
-        val userId = intent.getIntExtra("USER_ID", -1)
-        Log.d("MainActivity", "User ID probando: $userId")
-        if (userId != -1) {
-            Log.d("MainActivity", "ID del usuario: $userId")
-            val bundle = Bundle()
-            bundle.putInt("USER_ID", userId)
-            val fragment1 = F_Profile()
-            fragment1.arguments = bundle
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, fragment1)
-                .commit()
-        } else {
-            Toast.makeText(this, "Hubod un error", Toast.LENGTH_SHORT).show()
-        }
-    }*/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
