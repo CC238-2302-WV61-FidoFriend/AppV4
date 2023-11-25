@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#B0DAFF"
+    app:cardUseCompatPadding="true"
+    tools:context=".ui.activity.DetailPetActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#DAF5FF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/detailedInfoHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/informaci_n_detallada"
+            android:background="@color/blueshift"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lobster"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:paddingStart="16dp"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewFav"
+            android:layout_width="210dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/blueshift"
+            app:civ_border_width="1.5dp"
+            app:layout_constraintTop_toBottomOf="@id/detailedInfoHeader"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTextViewFav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Nombre"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/lobster"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewFav"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/descriptionTextViewFav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintTop_toBottomOf="@id/nameTextViewFav"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/ageTextViewFav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:text="@string/age"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextViewFav"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/sexTextViewFav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="@string/sexo"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/ageTextViewFav"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <Button
+            android:id="@+id/favButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/agregar_a_fav"
+            android:backgroundTint="@color/blueshift"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sexTextViewFav" />
+
+        <Button
+            android:id="@+id/favRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/remover_de_fav"
+            android:backgroundTint="@color/blueshift"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sexTextViewFav" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

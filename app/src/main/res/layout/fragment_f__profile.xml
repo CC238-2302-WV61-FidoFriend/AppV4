@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?android:attr/actionBarSize"
+    tools:context=".ui.fragment.F_Profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/topBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blueshift"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <View
+        android:id="@+id/bottomBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        app:civ_border_color="@color/skybluelight"
+        app:civ_border_width="2dp"
+        android:contentDescription="@string/profile"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:layout_constraintTop_toTopOf="@id/topBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/nameText" />
+
+    <ImageView
+        android:id="@+id/checkRegister"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@null"
+        android:src="@drawable/verified_user_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.200" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_completo"
+        android:fontFamily="@font/lobster"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        android:maxLines="2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo_example_com"
+        android:fontFamily="@font/lobster"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/vetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isvet"
+        android:textSize="18sp"
+        android:fontFamily="@font/lobster"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp" />
+
+
+    <!-- EDITAR -->
+
+    <TextView
+        android:id="@+id/tittle_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actualiza_tu_perfil"
+        android:textSize="28sp"
+        android:fontFamily="@font/lobster"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/bottomBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="330dp"
+            android:layout_height="0dp"
+            android:hint="@string/id_usuario"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:visibility="gone"
+            android:drawableTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tittle_edit"
+            app:layout_constraintWidth_percent=".8"
+            android:drawableStart="@drawable/profile_24"
+            android:drawablePadding="13dp"
+            android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtNombres"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:hint="@string/nombres"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tittle_edit"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableStart="@drawable/profile_24"
+        android:drawablePadding="13dp"
+        android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtApellidos"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:hint="@string/apellidos"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:drawableTint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:autofillHints="name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNombres"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableStart="@drawable/profile_24"
+        android:drawablePadding="13dp"
+        android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:drawablePadding="13dp"
+        android:drawableTint="@color/black"
+        android:drawableLeft="@drawable/email_24"
+        android:inputType="textEmailAddress"
+        android:autofillHints="textEmailAddress"
+        android:hint="@string/correo_electr_nico"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtApellidos"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/edtDireccion"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:drawablePadding="13dp"
+        android:inputType="text"
+        android:autofillHints="text"
+        android:drawableTint="@color/black"
+        android:drawableLeft="@drawable/home_24"
+        android:hint="@string/direccion"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCorreo"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:drawablePadding="13dp"
+        android:inputType="text"
+        android:autofillHints="text"
+        android:hint="@string/descripci_n"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/description_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDireccion"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/edtFoto"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:drawablePadding="13dp"
+        android:inputType="text"
+        android:autofillHints="text"
+        android:drawableLeft="@drawable/image_24"
+        android:hint="@string/url_de_imagen"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescripcion"
+        app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cambiar_bg"
+            android:padding="10dp"
+            android:text="@string/presiona_para_editar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tittle_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/btnUpdateSave"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cambiar_bg"
+            android:padding="10dp"
+            android:text="@string/guardar_cambios"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtFoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
