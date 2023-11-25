@@ -1,5 +1,6 @@
 package com.rol.fidofriend_app.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.rol.fidofriend_app.data.sharedpref.ThemeManager
 import com.rol.fidofriend_app.databinding.FragmentFSettingBinding
+import com.rol.fidofriend_app.ui.activity.Politcas
 
 class F_Setting : Fragment() {
 
@@ -39,6 +41,11 @@ class F_Setting : Fragment() {
             } else {
                 Toast.makeText(context, "Ya se encuentra en modo claro", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        binding.politicas.setOnClickListener {
+            val intent = Intent(requireContext(), Politcas::class.java)
+            startActivity(intent)
         }
 
         return binding.root

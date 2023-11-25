@@ -1,0 +1,161 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Términos y Condiciones -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Términos y Condiciones"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido a nuestra aplicación móvil de servicios veterinarios. Al utilizar esta aplicación, aceptas cumplir con los siguientes términos y condiciones. Si no estás de acuerdo con alguna parte de estos términos, te pedimos que no utilices nuestra aplicación."
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Puntos 1-5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Uso de la Aplicación:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Debes usar la aplicación de manera ética y de acuerdo con todas las leyes y regulaciones aplicables.\nNo debes realizar actividades que puedan dañar, interferir o sobrecargar nuestra aplicación."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Uso de la Aplicación:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utilizamos la información recopilada para brindar servicios veterinarios, mejorar la aplicación y enviar comunicaciones relacionadas con la salud y bienestar de tus mascotas."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Servicios Veterinarios:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Los servicios ofrecidos a través de la aplicación son proporcionados por profesionales veterinarios debidamente calificados.
+No nos hacemos responsables de la calidad o resultados de los servicios prestados por terceros a los que accedas a través de la aplicación."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Propiedad Intelectual:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Todos los derechos de propiedad intelectual relacionados con la aplicación son propiedad de SofSpecials y están protegidos por la ley."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Limitación de Responsabilidad:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No nos hacemos responsables de daños indirectos, consecuentes, especiales o incidentales que surjan del uso de la aplicación."
+                android:layout_marginBottom="16dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Política de Privacidad"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Información Recopilada:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recopilamos información personal limitada necesaria para proporcionar nuestros servicios veterinarios. Esto puede incluir nombre, dirección, información de contacto y datos médicos de tus mascotas."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Contacto:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Si tienes preguntas sobre nuestra política de privacidad, puedes contactarnos en SoftSpecial@gmail.com."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Seguridad:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Implementamos medidas de seguridad para proteger tu información contra accesos no autorizados, divulgación o alteración."
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
