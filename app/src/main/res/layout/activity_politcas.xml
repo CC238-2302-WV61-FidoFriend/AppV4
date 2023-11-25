@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. Uso de la Aplicación:"
+                android:text="2. Cuentas de Usuario:"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"/>
@@ -56,7 +56,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Utilizamos la información recopilada para brindar servicios veterinarios, mejorar la aplicación y enviar comunicaciones relacionadas con la salud y bienestar de tus mascotas."
+                android:text="Al registrarte en nuestra aplicación, proporcionas información precisa y actualizada.
+Eres responsable de mantener la confidencialidad de tu cuenta y contraseña."
                 android:layout_marginBottom="16dp"/>
 
             <TextView
@@ -154,6 +155,20 @@ No nos hacemos responsables de la calidad o resultados de los servicios prestado
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Implementamos medidas de seguridad para proteger tu información contra accesos no autorizados, divulgación o alteración."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Uso de la Información:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utilizamos la información recopilada para brindar servicios veterinarios, mejorar la aplicación y enviar comunicaciones relacionadas con la salud y bienestar de tus mascotas."
                 android:layout_marginBottom="16dp"/>
 
         </LinearLayout>
